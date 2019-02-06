@@ -2,7 +2,7 @@
 The open source version of GAC (Grab Activation Code) Spammer written in Perl for CLI.
 
 ```cmd
-Usage: perl spamcall.php <phone_number> [SMS|CALL]
+Usage: perl spamcall.php <phone_number> [SMS|CALL|RANDOM]
 ```
 
 ---
