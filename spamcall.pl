@@ -37,7 +37,7 @@ sub api {
 	my $res = LWP::UserAgent->new->post( "https://api.grab.com/grabid/v1/phone/otp",
 		Content => 'method='.callsmsrandom().'&countryCode='.ccode().'&phoneNumber='.$ARGV[0].'&templateID=&numDigits=4'
 	);
-	if ( $res->is_success ) {
+	if ( $res->is_success ) { #check http code : 200
 		print "[ ".$res->code." ][".ccode()."]".lc($go)." requested \n";
 	}
 }
