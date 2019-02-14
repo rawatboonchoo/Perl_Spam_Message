@@ -24,7 +24,8 @@ sub errorarrgv{
 sub callsmsrandom {
 	if ($ARGV[1] eq 'CALL' ) {
 		$go = 'CALL';
-	} else { #else SMS
+	} 
+	if ($ARGV[1] eq 'SMS') {
 		$go = 'SMS';
 	}
 	if ($ARGV[1] eq 'RANDOM' ) {
